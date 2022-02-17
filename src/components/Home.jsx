@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import "../styles/home.css";
 
 export const Home = () => {
   return (
-    <div id="fondo">
-        <nav className="navbar navbar-light bg-light">
+    <div>
+        <nav className="navbar">
             <img
             src="https://res.cloudinary.com/julcabh/image/upload/v1644814168/Sprint3/logo-blockBuster_fcx3cy.png"
             alt="logo"
