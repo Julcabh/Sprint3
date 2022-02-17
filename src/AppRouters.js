@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../src/components/Home"
-import { Login } from "../src/components/Login"
-import { Registro } from "../src/components/Registro"
+import { Home } from "./components/Home"
+import { Login } from "./components/Login"
+import { Registro } from "./components/Registro"
 
 export const AppRouters = () => {
   return (

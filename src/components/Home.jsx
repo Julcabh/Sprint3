@@ -1,10 +1,29 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { Main, Contenedor, Img, H3, Input, Nav  } from '../styles/homeStyle'
 
 export const Home = () => {
   return (
-    <Main>
+    <div id="fondo">
+        <nav className="navbar navbar-light bg-light">
+            <img
+            src="https://res.cloudinary.com/julcabh/image/upload/v1644814168/Sprint3/logo-blockBuster_fcx3cy.png"
+            alt="logo"
+            width="100"
+            />
+            <h3>Todas</h3>
+            <h3>Mas Valoradas</h3>
+            <h3>Menos Valoradas</h3>
+            <input type="text" placeholder='Busca tu pelicula favorita' ></input>
+            <Link to="/login">
+            <img
+              src="https://res.cloudinary.com/julcabh/image/upload/v1643585731/login-xxl_rnvlgd.png"
+              alt="LogIn"
+              width="50"
+            />
+          </Link>
+        </nav>   
+    </div>
+    /*<Main>
       <Contenedor>
         <Nav>
           <Img
@@ -25,7 +44,7 @@ export const Home = () => {
           </Link>
         </Nav>
       </Contenedor>
-    </Main>
+    </Main>*/
     
   )
 }

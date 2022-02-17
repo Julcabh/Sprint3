@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import { Form, H1, Input, Button, A, P } from '../styles/homeStyle'
 import { loginEmailPassAsincrono, loginGoogleAsincrono, logoutAsincrono } from '../actions/actionLogin';
 import { useDispatch } from 'react-redux';
 
@@ -37,23 +36,23 @@ export const Login = () => {
 
 
     return (
-        <div>
-            <Form onSubmit={handleSubmit}>
-                <H1>Iniciar Sesion</H1>
-                <Button
-                    onClick={() => handleGoogleAsincrono()}
-                >Continuar con Google</Button>
-                <P>Correo electronico</P>
-                <Input type="text" placeholder="Ingrese su correo electronico" name="email" onChange={handleInputChange}></Input>
-                <P>Contraseña</P>
-                <Input type="password" placeholder="Ingrese su contraseña" name="password" onChange={handleInputChange}></Input>
-                <br></br>
-                <Button type="submit">Iniciar Sesion</Button>
-                <Button type="button" onClick={() => handleLogout()}>Salir</Button>
-                <P><A href="/home">¿Se te olvido tu contraseña?</A></P>
-                <P>¿Aun no tienes una cuenta?  <A href="/registro">Registrarse</A></P>
-            </Form>
-        </div>
+        <div id="login-row" class="row justify-content-center align-items-center" >
+        <form  onSubmit={handleSubmit}>
+            <h1>Iniciar Sesion</h1>
+            <button
+                onClick={() => handleGoogleAsincrono()}
+            >Continuar con Google</button>
+            <p>Correo electronico</p>
+            <input type="text" placeholder="Ingrese su correo electronico" name="email" onChange={handleInputChange}></input>
+            <p>Contraseña</p>
+            <input type="password" placeholder="Ingrese su contraseña" name="password" onChange={handleInputChange}></input>
+            <br></br>
+            <button type="submit">Iniciar Sesion</button>
+            <button type="button" onClick={() => handleLogout()}>Salir</button>
+            <p><a href="/home">¿Se te olvido tu contraseña?</a></p>
+            <p>¿Aun no tienes una cuenta?  <a href="/registro">Registrarse</a></p>
+        </form>
+    </div>
 
     )
 }

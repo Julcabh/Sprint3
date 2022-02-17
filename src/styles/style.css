@@ -1,9 +1,59 @@
-body{
-    background-color: #352E6C;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    height: 100vh;
+  }
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+}
+.contenedor{
+    border: 1px solid black;
+    padding: 10px;
+    width: 50rem;
+    border-radius: 30px;
+    background: white;
+}
 h1{
-    background-color: black;
-    background-color: #352E6C;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+input{
+    text-align: center;
+    width: 50%;
+    padding: 15px 20px;
+    margin: auto;
+    display:block;
     
+}
+.button{
+    width: 50%;
+    color: white;
+    background: #FA4A0C;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin:auto;
+    display:block
+}
+.button:hover{
+    background: orange;
+}
+p,a{
+    text-align: center;
+}
+@media(min-width:768px){
+    .contenedor{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+    }
 }

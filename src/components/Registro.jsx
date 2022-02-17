@@ -29,20 +29,20 @@ export const Registro = () => {
 
   return (
     <div>
-      <Form onSubmit={handleSubmit}>
-        <H1>Registrar cuenta</H1>
-        <P>Nombre</P>
-        <Input type="text" placeholder="Ingrese su Nombre" name="nombre" onChange={handleInputChange}></Input>
-        <P>Correo electronico</P>
-        <Input type="text" placeholder="Ingrese su correo electronico" name="email" onChange={handleInputChange}></Input>
-        <P>Contraseña</P>
-        <Input type="password" placeholder="Ingrese su contraseña" name="pass1" onChange={handleInputChange}></Input>
-        <P>Repita su contraseña</P>
-        <Input type="password" placeholder="Ingrese su contraseña" name="pass2" onChange={handleInputChange}></Input>
+      <form onSubmit={handleSubmit}>
+        <h1>Registrar cuenta</h1>
+        <p>Nombre</p>
+        <input type="text" placeholder="Ingrese su Nombre" name="nombre" onChange={handleInputChange}></input>
+        <p>Correo electronico</p>
+        <input type="text" placeholder="Ingrese su correo electronico" name="email" onChange={handleInputChange}></input>
+        <p>Contraseña</p>
+        <input type="password" placeholder="Ingrese su contraseña" name="pass1" onChange={handleInputChange}></input>
+        <p>Repita su contraseña</p>
+        <input type="password" placeholder="Ingrese su contraseña" name="pass2" onChange={handleInputChange}></input>
         <br></br>
-        <Button>Registrar cuenta</Button>
-        <P>¿Ya tienes una cuenta?  <A href="/login">Iniciar sesion</A></P>
-      </Form>
+        <button>Registrar cuenta</button>
+        <p>¿Ya tienes una cuenta?  <a href="/login">Iniciar sesion</a></p>
+      </form>
     </div>
 
   )
