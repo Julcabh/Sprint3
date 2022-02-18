@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import {useForm } from '../hooks/useForm';
 import { loginEmailPassAsincrono, loginGoogleAsincrono, logoutAsincrono } from '../actions/actionLogin';
 import { useDispatch } from 'react-redux';
 import "../styles/login.css";
 
-export const Login = () => {
+function Login({history}){
 
     const dispatch = useDispatch();
 
@@ -58,11 +59,13 @@ export const Login = () => {
                     </input>
                     <br></br>
                     <button className="button" type="submit">Iniciar Sesion</button>
-                    <button className="button" type="button" onClick={() => handleLogout()}>Salir</button>
                     <p><a href="/home">¿Se te olvido tu contraseña?</a></p>
-                    <p>¿Aun no tienes una cuenta?  <a href="/registro">Registrarse</a></p>
+                    <p>¿Aun no tienes una cuenta? <Link to="/registro">Registrarse</Link></p>
+                    
                 </form>
             </div>
         </div>   
     );
 }
+
+export default Login;

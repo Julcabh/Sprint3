@@ -62,7 +62,7 @@ export const Registro = () => {
           </input>
           <br></br>
           <button className="button">Registrar cuenta</button>
-          <p>¿Ya tienes una cuenta?  <a href="/login">Iniciar sesion</a></p>
+          <p>¿Ya tienes una cuenta? <Link to="/">Login</Link></p>
         </form>
       </div>
     </div>

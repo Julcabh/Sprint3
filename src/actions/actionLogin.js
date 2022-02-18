@@ -2,6 +2,8 @@ import { getAuth, signInWithEmailAndPassword, signInWithPopup, signOut } from "f
 import { google } from "../firebase/firebaseConfig";
 import { types } from "../types/types";
 
+//logout
+
 export const loginEmailPassAsincrono = (email, pass) => {
     return (dispatch) => { 
         const auth = getAuth()
