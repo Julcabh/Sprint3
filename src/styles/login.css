@@ -1,5 +1,5 @@
 
-body{
+.body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     
@@ -15,6 +15,7 @@ h1{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    color: black;
 }
 input{
     text-align: center;
@@ -39,6 +40,7 @@ input{
 }
 p,a{
     text-align: center;
+    color: black;
 }
 @media(min-width:768px){
     .formulario{

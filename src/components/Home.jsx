@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
-import { Link } from "react-router-dom";
-import "../styles/home.css";
 import { useDispatch } from 'react-redux';
 import { logoutAsincrono } from '../actions/actionLogin';
 //peliculas
