@@ -10,8 +10,7 @@ export const Registro = () => {
   const [registro, setRegistro] = useState({
     nombre: '',
     email: '',
-    pass1: '',
-    pass2: ''
+    pass1: ''
   })
 
   const { nombre, email, pass1, pass2 } = registro;
@@ -57,7 +56,7 @@ export const Registro = () => {
           <input 
               type="password" 
               placeholder="Ingrese su contraseña" 
-              name="pass2" 
+              name="pass1" 
               onChange={handleInputChange}>
           </input>
           <br></br>

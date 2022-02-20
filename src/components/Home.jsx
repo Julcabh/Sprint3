@@ -30,10 +30,6 @@ export const Home = () => {
   const [searchKey, setSearchKey] = useState("")
   const [movie, setMovie] = useState({ title: "Loading Movies" })
 
-  useEffect(() => {
-    fetchMovies()
-  }, [])
-
   const fetchMovies = async (event) => {
     if (event) {
       event.preventDefault()
@@ -89,6 +85,9 @@ export const Home = () => {
     ))
   )
 
+  useEffect(() => {
+    fetchMovies()
+  }, [])
 
 
 

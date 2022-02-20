@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import {useForm } from '../hooks/useForm';
 import { loginEmailPassAsincrono, loginGoogleAsincrono, logoutAsincrono } from '../actions/actionLogin';
 import { useDispatch } from 'react-redux';
 import "../styles/login.css";
@@ -32,9 +31,9 @@ function Login({history}){
         dispatch(loginGoogleAsincrono())
     }
 
-    const handleLogout = () => {
+    /*const handleLogout = () => {
         dispatch(logoutAsincrono())
-    }
+    }*/
 
 
     return (

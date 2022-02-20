@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import Login from "../components/Login"
 import { Registro } from "../components/Registro"
-import { Movie } from "../components/Movie";
 import { DashboardRouter } from "./DashboardRouter"
 import { PrivateRoute } from "./PrivateRoute"
 import { PublicRoute } from "./PublicRoute"
