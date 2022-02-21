@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import { loginEmailPassAsincrono, loginGoogleAsincrono, logoutAsincrono } from '../actions/actionLogin';
+import { loginEmailPassAsincrono, loginGoogleAsincrono, /*logoutAsincrono*/ } from '../actions/actionLogin';
 import { useDispatch } from 'react-redux';
 import "../styles/login.css";
 

@@ -11,9 +11,10 @@ export const Registro = () => {
     nombre: '',
     email: '',
     pass1: ''
+    /*pass2: ''*/
   })
 
-  const { nombre, email, pass1, pass2 } = registro;
+  const { nombre, email, pass1, /*pass2*/ } = registro;
 
   const handleInputChange = ({ target }) => {
     setRegistro({
