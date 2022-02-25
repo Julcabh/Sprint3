@@ -3,6 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     
+    
 }
 .formulario{
     border: 1px solid black;
@@ -10,6 +11,14 @@
     width: 50rem;
     border-radius: 30px;
     background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    
 }
 h1{
     text-align: center;
@@ -33,7 +42,8 @@ input{
     padding: 15px 20px;
     cursor: pointer;
     margin:auto;
-    display:block
+    display:block;
+    
 }
 .button:hover{
     background: #FFA903;

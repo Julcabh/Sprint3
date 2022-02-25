@@ -8,6 +8,7 @@ export const registroAsincrono = (email, pass, name) => {
         .then (async({ user }) => {
             console.log(user)
             await updateProfile(auth.currentUser, {displayName: name} )
+            alert("Se registro correctamente");
         })
         .catch (e => {
             console.log(e)

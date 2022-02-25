@@ -103,9 +103,9 @@ export const Home = () => {
             alt="logo"
             width="100"
         />
-        <h3>Todas</h3>
-        <h3>Mas Valoradas</h3>
-        <h3>Menos Valoradas</h3>
+        <h3 href="/home">Todas</h3>
+        <h3 href="/home">Mas Valoradas</h3>
+        <h3 href="/home">Menos Valoradas</h3>
         <form className="form" onSubmit={fetchMovies}>
             <input className="search" type="text" id="search"
                    onInput={(event) => setSearchKey(event.target.value)}/>
