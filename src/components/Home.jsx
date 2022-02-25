@@ -146,14 +146,14 @@ export const Home = () => {
                                     }
                                 }
                             />
-                            <button onClick={() => setPlaying(false)} className={"button close-video"}>Close
+                            <button onClick={() => setPlaying(false)} className={"button close-video"}>Cerrar
                             </button>
                         </> :
                         <div className="center-max-size">
                             <div className="poster-content">
                                 {trailer ?
                                     <button className={"button play-video"} onClick={() => setPlaying(true)}
-                                            type="button">Play
+                                            type="button">Reproducir el
                                         Trailer</button>
                                     : 'Sorry, no trailer available'}
                                 <h1>{movie.title}</h1>
