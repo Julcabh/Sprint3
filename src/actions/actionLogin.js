@@ -11,7 +11,7 @@ export const loginEmailPassAsincrono = (email, pass) => {
         .then (({ user }) => {
             //dispatch(loginSincrono(user.uid, user.displayName))
             console.log("Hola, bienvenido")
-            alert("Bienvenido");
+            alert("Bienvenido "+email);
             console.log(user)
         })
         .catch (error => {
